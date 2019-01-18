@@ -15,7 +15,78 @@
 
 <body>
     <!-- START HERE -->
-    <h1>Teste</h1>
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">Tracalorie</a>
+                <ul class="right">
+                    <li><a href="#" class="clear-btn btn blue lighten-3">Clear All</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV FINISHED -->
+
+    <br>
+
+    <!-- FORM AREA -->
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Add Meal / Food Item</span>
+                <form class="cal">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" placeholder="Add Item" id="item-name">
+                            <label for="item-name">Meal</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" placeholder="Add Calories" id="item-calories">
+                            <label for="item-calories">Calories</label>
+                        </div>
+                        <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
+                        <!-- <button class="update-btn btn orange"><i class="fa fa-pen-square"></i> Update Meal</button>
+                        <button class="delete-btn btn red"><i class="fa fa-ban"></i> Delete Meal</button>-->
+
+                        <button class="back-btn btn grey right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- CALORIE COUNTER -->
+        <h3 class="center-align">Total Calories: <span class="total-calories"></span>0</h3>
+
+        <!-- ITEM LIST -->
+        <ul id="item-list" class="collection">
+            <li class="collection-item" id="item-0">
+                <strong>Steak Dinner: </strong><em>1200 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="fas fa-pencil-alt"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Cookie: </strong><em>400 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="fas fa-pencil-alt"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Eggs: </strong><em>300 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="fas fa-pencil-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
 
     <!-- jQuery first-->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
