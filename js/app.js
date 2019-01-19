@@ -8,7 +8,7 @@ const ItemCtrl = (function () {
         this.id = id;
         this.name = name;
         this.calories = calories;
-    }
+    };
 
     // Data Structure // State
 
@@ -31,7 +31,7 @@ const ItemCtrl = (function () {
         ],
         currentItem: null,
         totalCalories: 0
-    }
+    };
 
     // Public methods
     return {
@@ -55,13 +55,16 @@ const UICtrl = (function () {
             let html = '';
 
             items.forEach(function (item) {
-                html += `<li class="collection-item" id="item-${item.id}>
+                html += `<li class="collection-item" id="item-${item.id}">
                 <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
                 <a href="#" class="secondary-content">
                     <i class="edit-item fas fa-pencil-alt"></i>
                 </a>
-                </li>`
+                </li>`;
             });
+
+            // Insert list items
+            document.querySelector('#item-list').innerHTML = html;
         }
 
     }
